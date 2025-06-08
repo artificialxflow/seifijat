@@ -1,263 +1,190 @@
 // Product data with descriptions for each item
 const products = [
   {
-    id: 1,
-    title: "Traditional Persian Carpet",
-    description: "Handwoven masterpiece featuring intricate geometric patterns and rich colors. Made with premium wool and silk threads using traditional Persian weaving techniques passed down through generations.",
-    features: ["Handwoven", "Wool & Silk", "Traditional Design", "Premium Quality"],
-    image: "./assets/01.jfif"
+    title: "کدو سبز",
+    description: "کدو سبز تازه و لطیف، مناسب برای خورش و آشپزی سالم. برداشت روز.",
+    features: ["تازه و لطیف", "سایز متوسط", "مناسب آشپزی", "برداشت روز"],
+    image: "./public/kadoo.jpg"
   },
   {
-    id: 2,
-    title: "Persian Ceramic Vase",
-    description: "Elegant ceramic vase with traditional Persian motifs and calligraphy. Each piece is hand-painted by skilled artisans using authentic Persian glazing techniques.",
-    features: ["Hand-painted", "Ceramic", "Traditional Motifs", "Decorative"],
-    image: "./assets/02.jfif"
+    title: "کاهو بسته بندی",
+    description: "کاهو بسته بندی شده با کیفیت عالی و مناسب برای فروشگاه‌ها و رستوران‌ها.",
+    features: ["بسته بندی بهداشتی", "تازه و سالم", "مناسب فروشگاه", "ماندگاری بالا"],
+    image: "./public/kahoo-bastebandi.jpg"
   },
   {
-    id: 3,
-    title: "Miniature Persian Painting",
-    description: "Exquisite miniature painting depicting classical Persian poetry scenes. Created using traditional pigments and gold leaf on handmade paper.",
-    features: ["Miniature Art", "Gold Leaf", "Handmade Paper", "Classical Scenes"],
-    image: "./assets/03.jfif"
+    title: "کاهو",
+    description: "کاهو رسمی با برگ‌های سبز و لطیف، مناسب برای انواع سالاد و مصرف روزانه.",
+    features: ["برگ لطیف", "تازه و سالم", "مناسب رستوران", "برداشت روز"],
+    image: "./public/kahoo.jpg"
   },
   {
-    id: 4,
-    title: "Persian Brass Samovar",
-    description: "Authentic brass samovar for traditional tea preparation. Handcrafted with intricate engravings and traditional Persian designs, perfect for ceremonial use.",
-    features: ["Brass", "Handcrafted", "Functional", "Ceremonial"],
-    image: "./assets/04.jfif"
+    title: "کلم 7",
+    description: "کلم تازه و ترد، مناسب برای سالاد و ترشی. برداشت مستقیم از مزارع سالم.",
+    features: ["تازه و ترد", "سایز بزرگ", "مناسب سالاد", "قیمت مناسب"],
+    image: "./public/kalam7.jpg"
   },
   {
-    id: 5,
-    title: "Khatam Jewelry Box",
-    description: "Beautiful jewelry box featuring Khatam-kari (Persian marquetry) with geometric patterns made from wood, bone, and metal inlays.",
-    features: ["Khatam-kari", "Marquetry", "Geometric Patterns", "Storage"],
-    image: "./assets/05.jfif"
+    title: "سبزی",
+    description: "سبزی تازه و معطر، مناسب برای مصرف روزانه و آشپزی ایرانی.",
+    features: ["تازه و معطر", "مناسب آشپزی", "برداشت روز", "قیمت مناسب"],
+    image: "./public/sabji.jpg"
   },
   {
-    id: 6,
-    title: "Persian Silk Scarf",
-    description: "Luxurious silk scarf with traditional Persian paisley patterns. Hand-printed using natural dyes and featuring elegant fringe details.",
-    features: ["Pure Silk", "Hand-printed", "Paisley Design", "Natural Dyes"],
-    image: "./assets/06.jfif"
+    title: "چغندر3",
+    description: "چغندر تازه و شیرین، مناسب برای آبگیری و مصرف خام یا پخته.",
+    features: ["شیرین و تازه", "مناسب آبگیری", "سرشار از ویتامین", "برداشت روز"],
+    image: "./public/choghondar3.jpg"
   },
   {
-    id: 7,
-    title: "Traditional Persian Mirror",
-    description: "Ornate mirror with intricate metalwork frame featuring traditional Persian motifs. The frame is hand-engraved with floral and geometric patterns.",
-    features: ["Metalwork", "Hand-engraved", "Ornate Design", "Traditional"],
-    image: "./assets/07.jfif"
+    title: "کاهو 8",
+    description: "کاهو تازه و لطیف، مناسب برای سالاد و مصرف روزانه.",
+    features: ["تازه و لطیف", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kahoo8.jpg"
   },
   {
-    id: 8,
-    title: "Persian Calligraphy Art",
-    description: "Beautiful calligraphy artwork featuring classical Persian poetry. Created by master calligraphers using traditional reed pens and natural inks.",
-    features: ["Calligraphy", "Poetry", "Reed Pen", "Natural Inks"],
-    image: "./assets/08.jfif"
+    title: "سیر",
+    description: "سیر تازه و خوش‌عطر، مناسب برای مصرف خام و پخت و پز.",
+    features: ["خوش‌عطر", "تازه و سالم", "مناسب آشپزی", "برداشت روز"],
+    image: "./public/sir.jpg"
   },
   {
-    id: 9,
-    title: "Handwoven Persian Kilim",
-    description: "Flat-woven kilim rug with traditional tribal patterns and natural dyes. Lightweight yet durable, perfect for both floor covering and wall decoration.",
-    features: ["Flat-woven", "Tribal Patterns", "Natural Dyes", "Versatile"],
-    image: "./assets/09.jfif"
+    title: "کاهو 7",
+    description: "کاهو تازه و لطیف، مناسب برای سالاد و مصرف روزانه.",
+    features: ["تازه و لطیف", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kahoo7.jpg"
   },
   {
-    id: 10,
-    title: "Persian Enamel Plate",
-    description: "Decorative plate featuring traditional Persian enamelwork (Minakari) with vibrant colors and intricate floral designs.",
-    features: ["Minakari", "Enamelwork", "Floral Design", "Decorative"],
-    image: "./assets/10.jfif"
+    title: "کاهو6",
+    description: "کاهو تازه و لطیف، مناسب برای سالاد و مصرف روزانه.",
+    features: ["تازه و لطیف", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kahoo6.jpg"
   },
   {
-    id: 11,
-    title: "Traditional Persian Hookah",
-    description: "Authentic Persian water pipe (hookah) with brass base and traditional decorations. Handcrafted with attention to both functionality and aesthetics.",
-    features: ["Brass Base", "Traditional", "Functional", "Decorative"],
-    image: "./assets/11.jfif"
+    title: "کلم 5",
+    description: "کلم تازه و ترد، مناسب برای سالاد و ترشی.",
+    features: ["تازه و ترد", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kalam5.jpg"
   },
   {
-    id: 12,
-    title: "Persian Wooden Chess Set",
-    description: "Handcrafted wooden chess set with pieces inspired by Persian historical figures. The board features traditional Persian geometric patterns.",
-    features: ["Handcrafted Wood", "Historical Figures", "Geometric Board", "Game Set"],
-    image: "./assets/12.jfif"
+    title: "کاهو4",
+    description: "کاهو تازه و لطیف، مناسب برای سالاد و مصرف روزانه.",
+    features: ["تازه و لطیف", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kahoo4.jpg"
   },
   {
-    id: 13,
-    title: "Persian Copper Tray",
-    description: "Large decorative copper tray with hand-engraved traditional patterns. Perfect for serving or as a wall decoration piece.",
-    features: ["Copper", "Hand-engraved", "Large Size", "Dual Purpose"],
-    image: "./assets/13.jfif"
+    title: "کاهو3",
+    description: "کاهو تازه و لطیف، مناسب برای سالاد و مصرف روزانه.",
+    features: ["تازه و لطیف", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kahoo3.jpg"
   },
   {
-    id: 14,
-    title: "Traditional Persian Lamp",
-    description: "Ornate table lamp with traditional Persian metalwork and colored glass panels. Creates beautiful ambient lighting with traditional patterns.",
-    features: ["Metalwork", "Colored Glass", "Ambient Lighting", "Traditional"],
-    image: "./assets/14.jfif"
+    title: "مزرعه ای",
+    description: "محصولات تازه و سالم برداشت شده از مزارع ایرانی.",
+    features: ["تازه و سالم", "برداشت روز", "مناسب فروشگاه", "قیمت مناسب"],
+    image: "./public/mazraei.jpg"
   },
   {
-    id: 15,
-    title: "Persian Embroidered Tablecloth",
-    description: "Elegant tablecloth with hand-embroidered Persian motifs using silk threads. Features traditional floral and vine patterns.",
-    features: ["Hand-embroidered", "Silk Threads", "Floral Motifs", "Table Linen"],
-    image: "./assets/15.jfif"
+    title: "لیمو",
+    description: "لیمو ترش تازه و آبدار، مناسب برای آبگیری و مصرف روزانه.",
+    features: ["آبدار", "ویتامین C بالا", "پوست نازک", "مناسب آبگیری"],
+    image: "./public/limoo.jpg"
   },
   {
-    id: 16,
-    title: "Persian Ceramic Tile Set",
-    description: "Set of decorative ceramic tiles with traditional Persian geometric and floral patterns. Perfect for creating accent walls or backsplashes.",
-    features: ["Ceramic Tiles", "Geometric Patterns", "Decorative", "Set"],
-    image: "./assets/16.jfif"
+    title: "هندونه سبز",
+    description: "هندوانه سبز تازه و آبدار، مناسب برای مصرف تابستانی.",
+    features: ["آبدار و شیرین", "درشت و سالم", "برداشت روز", "ارسال سریع"],
+    image: "./public/hendevane-sabz.jpg"
   },
   {
-    id: 17,
-    title: "Traditional Persian Backgammon",
-    description: "Handcrafted backgammon set with Khatam-kari inlay work. The board features traditional Persian geometric patterns and comes with wooden pieces.",
-    features: ["Khatam-kari", "Inlay Work", "Game Board", "Wooden Pieces"],
-    image: "./assets/17.jfif"
+    title: "سیب زمینی",
+    description: "سیب زمینی تازه و یکدست، مناسب برای سرخ‌کردن و پخت انواع غذاها.",
+    features: ["یکدست و سالم", "مناسب سرخ‌کردن", "برداشت تازه", "قیمت مناسب"],
+    image: "./public/sibzamini2.jpg"
   },
   {
-    id: 18,
-    title: "Persian Silver Jewelry",
-    description: "Elegant silver jewelry set featuring traditional Persian designs with turquoise stones. Handcrafted by skilled Persian silversmiths.",
-    features: ["Sterling Silver", "Turquoise Stones", "Traditional Design", "Handcrafted"],
-    image: "./assets/18.jfif"
+    title: "کلم 3",
+    description: "کلم تازه و ترد، مناسب برای سالاد و ترشی.",
+    features: ["تازه و ترد", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kalam3.jpg"
   },
   {
-    id: 19,
-    title: "Persian Leather Bag",
-    description: "Handcrafted leather bag with traditional Persian tooling and brass hardware. Made from premium leather with intricate embossed patterns.",
-    features: ["Premium Leather", "Hand-tooled", "Brass Hardware", "Traditional"],
-    image: "./assets/19.jfif"
+    title: "بادمجان",
+    description: "بادمجان قلمی با پوست براق و بدون تخم زیاد، مناسب برای سرخ‌کردن و خورش.",
+    features: ["پوست براق", "بدون تلخی", "مناسب خورش", "سایز یکدست"],
+    image: "./public/bademjan.jpg"
   },
   {
-    id: 20,
-    title: "Traditional Persian Incense Burner",
-    description: "Ornate brass incense burner with traditional Persian engravings. Features intricate cutout patterns that create beautiful light effects.",
-    features: ["Brass", "Engraved", "Cutout Patterns", "Functional"],
-    image: "./assets/20.jfif"
+    title: "کلم سبز",
+    description: "کلم سبز تازه و ترد، مناسب برای سالاد و ترشی.",
+    features: ["تازه و ترد", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kalam-sabz.jpg"
   },
   {
-    id: 21,
-    title: "Persian Wooden Box",
-    description: "Decorative wooden box with Khatam-kari marquetry work. Features geometric patterns made from various woods, bone, and metal inlays.",
-    features: ["Khatam-kari", "Marquetry", "Multi-material", "Storage"],
-    image: "./assets/21.jfif"
+    title: "توت فرنگی",
+    description: "توت فرنگی تازه و خوش‌طعم، مناسب برای مصرف خام و تهیه مربا.",
+    features: ["خوش‌طعم", "تازه و سالم", "مناسب مربا", "برداشت روز"],
+    image: "./public/toot-farangi.jpg"
   },
   {
-    id: 22,
-    title: "Persian Textile Wall Hanging",
-    description: "Beautiful textile wall hanging with traditional Persian patterns. Hand-woven using natural fibers and dyes with fringe details.",
-    features: ["Hand-woven", "Natural Fibers", "Wall Decoration", "Traditional"],
-    image: "./assets/22.jfif"
+    title: "هندوانه",
+    description: "هندوانه‌های تازه و آبدار، برداشت روز از بهترین مزارع ایران.",
+    features: ["آبدار و شیرین", "درشت و سالم", "برداشت روز", "ارسال سریع"],
+    image: "./public/hendevane.jpg"
   },
   {
-    id: 23,
-    title: "Traditional Persian Tea Set",
-    description: "Complete tea set with traditional Persian design including teapot, glasses, and serving tray. Perfect for authentic Persian tea ceremony.",
-    features: ["Complete Set", "Traditional Design", "Tea Ceremony", "Authentic"],
-    image: "./assets/23.jfif"
+    title: "چغندر",
+    description: "چغندر تازه و شیرین، مناسب برای آبگیری و مصرف خام یا پخته.",
+    features: ["شیرین و تازه", "مناسب آبگیری", "سرشار از ویتامین", "برداشت روز"],
+    image: "./public/chohgondar.jpg"
   },
   {
-    id: 24,
-    title: "Persian Mosaic Art",
-    description: "Intricate mosaic artwork featuring traditional Persian geometric patterns. Made with hand-cut tiles in vibrant colors and gold accents.",
-    features: ["Mosaic Art", "Hand-cut Tiles", "Geometric", "Gold Accents"],
-    image: "./assets/24.jfif"
+    title: "کلم",
+    description: "کلم تازه و ترد، مناسب برای سالاد و ترشی.",
+    features: ["تازه و ترد", "مناسب سالاد", "برداشت روز", "قیمت مناسب"],
+    image: "./public/kalam.jpg"
   },
   {
-    id: 25,
-    title: "Persian Carved Wooden Panel",
-    description: "Decorative wooden panel with intricate hand-carved Persian motifs. Features traditional floral and geometric patterns in relief.",
-    features: ["Hand-carved", "Wooden Panel", "Relief Patterns", "Decorative"],
-    image: "./assets/25.jfif"
+    title: "پیاز سفید",
+    description: "پیاز سفید تازه و خوش‌طعم، مناسب برای پخت و پز و نگهداری.",
+    features: ["ماندگاری بالا", "طعم ملایم", "سایز متوسط", "مناسب بسته‌بندی"],
+    image: "./public/piazsefid.jpg"
   },
   {
-    id: 26,
-    title: "Traditional Persian Cushion",
-    description: "Luxurious cushion with traditional Persian embroidery and silk fabric. Features intricate needlework with metallic threads.",
-    features: ["Silk Fabric", "Hand-embroidered", "Metallic Threads", "Luxury"],
-    image: "./assets/26.jfif"
+    title: "لبو",
+    description: "لبو تازه و شیرین، مناسب برای مصرف خام یا پخته.",
+    features: ["شیرین و تازه", "مناسب آبگیری", "سرشار از ویتامین", "برداشت روز"],
+    image: "./public/laboo.jpg"
   },
   {
-    id: 27,
-    title: "Persian Brass Candlestick",
-    description: "Elegant brass candlestick with traditional Persian engravings. Handcrafted with intricate details and stable base design.",
-    features: ["Brass", "Hand-engraved", "Stable Base", "Traditional"],
-    image: "./assets/27.jfif"
+    title: "زردآلو",
+    description: "زردآلو تازه و شیرین، مناسب برای مصرف خام و تهیه مربا.",
+    features: ["شیرین و خوش‌طعم", "تازه و سالم", "مناسب مربا", "برداشت روز"],
+    image: "./public/zardaloo.jpg"
   },
   {
-    id: 28,
-    title: "Persian Ceramic Bowl Set",
-    description: "Set of decorative ceramic bowls with traditional Persian glazing and patterns. Each bowl features unique hand-painted designs.",
-    features: ["Ceramic", "Hand-painted", "Traditional Glazing", "Bowl Set"],
-    image: "./assets/28.jfif"
+    title: "انبه",
+    description: "انبه تازه و خوش‌عطر، مناسب برای مصرف خام و تهیه آبمیوه.",
+    features: ["خوش‌عطر", "تازه و سالم", "مناسب آبمیوه", "برداشت روز"],
+    image: "./public/anbe.jpg"
   },
   {
-    id: 29,
-    title: "Traditional Persian Doll",
-    description: "Handcrafted Persian doll wearing traditional costume with intricate embroidery and authentic accessories. Cultural collectible piece.",
-    features: ["Handcrafted", "Traditional Costume", "Embroidery", "Collectible"],
-    image: "./assets/29.jfif"
+    title: "بلال",
+    description: "بلال تازه و شیرین، مناسب برای کبابی و مصرف خام.",
+    features: ["شیرین و تازه", "مناسب کبابی", "برداشت روز", "قیمت مناسب"],
+    image: "./public/balal.jpg"
   },
   {
-    id: 30,
-    title: "Persian Metal Wall Art",
-    description: "Decorative metal wall art featuring traditional Persian calligraphy and geometric patterns. Hand-forged with antique finish.",
-    features: ["Metal Art", "Calligraphy", "Hand-forged", "Antique Finish"],
-    image: "./assets/30.jfif"
+    title: "گوجه",
+    description: "گوجه تازه و خوش‌طعم، مناسب برای سالاد و پخت و پز.",
+    features: ["خوش‌طعم", "تازه و سالم", "مناسب سالاد", "برداشت روز"],
+    image: "./public/goje-farangi.jpg"
   },
   {
-    id: 31,
-    title: "Persian Spice Container Set",
-    description: "Traditional spice container set with brass construction and engraved labels. Perfect for storing and displaying Persian spices.",
-    features: ["Brass Construction", "Engraved Labels", "Spice Storage", "Traditional"],
-    image: "./assets/31.jfif"
-  },
-  {
-    id: 32,
-    title: "Persian Decorative Plate",
-    description: "Large decorative plate with traditional Persian enamelwork and gold details. Features classical Persian garden motifs.",
-    features: ["Enamelwork", "Gold Details", "Garden Motifs", "Large Size"],
-    image: "./assets/32.jfif"
-  },
-  {
-    id: 33,
-    title: "Traditional Persian Carpet Runner",
-    description: "Long carpet runner with traditional Persian border patterns. Hand-knotted with high-quality wool and natural dyes.",
-    features: ["Hand-knotted", "Border Patterns", "High-quality Wool", "Runner"],
-    image: "./assets/33.jfif"
-  },
-  {
-    id: 34,
-    title: "Persian Wooden Serving Tray",
-    description: "Handcrafted wooden serving tray with Khatam-kari inlay work. Features traditional geometric patterns and brass handles.",
-    features: ["Khatam-kari", "Inlay Work", "Brass Handles", "Serving Tray"],
-    image: "./assets/34.jfif"
-  },
-  {
-    id: 35,
-    title: "Persian Textile Bag",
-    description: "Traditional textile bag with Persian kilim patterns and leather trim. Handwoven with natural fibers and traditional techniques.",
-    features: ["Kilim Patterns", "Leather Trim", "Handwoven", "Natural Fibers"],
-    image: "./assets/35.jfif"
-  },
-  {
-    id: 36,
-    title: "Persian Decorative Clock",
-    description: "Ornate wall clock with traditional Persian metalwork frame. Features Roman numerals and intricate engraved patterns.",
-    features: ["Metalwork Frame", "Roman Numerals", "Engraved Patterns", "Wall Clock"],
-    image: "./assets/36.jfif"
-  },
-  {
-    id: 37,
-    title: "Traditional Persian Book Cover",
-    description: "Handcrafted book cover with traditional Persian leather tooling and gold embossing. Features classical Persian literary motifs.",
-    features: ["Leather Tooling", "Gold Embossing", "Literary Motifs", "Book Cover"],
-    image: "./assets/37.jfif"
+    title: "پیاز",
+    description: "پیاز زرد با طعم ملایم و ماندگاری بالا، مناسب برای پخت و پز و نگهداری.",
+    features: ["ماندگاری بالا", "طعم ملایم", "سایز متوسط", "مناسب بسته‌بندی"],
+    image: "./public/piaz.jpg"
   }
 ];
 
