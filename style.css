@@ -1,3 +1,12 @@
+/*
+  Color palette updated to a 'fruity/sour' theme (lime, lemon, raspberry, mint)
+  - primary-color: #39d353 (lime green)
+  - secondary-color: #ffe066 (lemon yellow)
+  - accent-color: #ff4f81 (raspberry pink)
+  - text-dark: #1b5e20 (dark green)
+  - text-light: #6c757d (light olive/gray)
+  - background: #f6fff8 (mint cream)
+*/
 * {
   margin: 0;
   padding: 0;
@@ -5,15 +14,15 @@
 }
 
 :root {
-  --primary-color: #8B4513;
-  --secondary-color: #D2691E;
-  --accent-color: #CD853F;
-  --text-dark: #2C1810;
-  --text-light: #6B4423;
-  --background: #FFF8F0;
+  --primary-color: #39d353;
+  --secondary-color: #ffe066;
+  --accent-color: #ff4f81;
+  --text-dark: #1b5e20;
+  --text-light: #6c757d;
+  --background: #f6fff8;
   --white: #FFFFFF;
-  --shadow: rgba(139, 69, 19, 0.1);
-  --shadow-hover: rgba(139, 69, 19, 0.2);
+  --shadow: rgba(57, 211, 83, 0.1); /* lime green shadow */
+  --shadow-hover: rgba(57, 211, 83, 0.2);
 }
 
 body {
@@ -125,7 +134,7 @@ body {
 
 .search-box:focus {
   border-color: var(--primary-color);
-  box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+  box-shadow: 0 0 0 3px rgba(57, 211, 83, 0.1);
 }
 
 /* Main Content */
@@ -369,7 +378,7 @@ body {
   display: inline-block;
   width: 20px;
   height: 20px;
-  border: 3px solid rgba(139, 69, 19, 0.3);
+  border: 3px solid rgba(57, 211, 83, 0.3);
   border-radius: 50%;
   border-top-color: var(--primary-color);
   animation: spin 1s ease-in-out infinite;
