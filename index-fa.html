@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MadeByPersians - کاتالوگ عمده فروشی صیفی جات و میوه</title>
+    <meta name="description" content="کاتالوگ محصولات عمده فروشی میوه و صیفی جات تازه. خرید مستقیم از تامین‌کنندگان معتبر و ارسال به سراسر کشور." />
+    <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style-fa.css">
+    <style>
+      /* رفع فاصله اضافی بالای هدر */
+      body { margin: 0; }
+      .header { margin-top: 0 !important; }
+    </style>
+  </head>
+  <body>
+    <!-- هدر -->
+    <header class="header">
+      <div class="container">
+        <div class="header-content">
+          <h1 class="brand-name">MadeByPersians</h1>
+          <p class="tagline">عمده فروشی میوه و صیفی جات تازه و با کیفیت</p>
+          <div class="contact-info">
+            <div class="contact-item">sales@madebypersians.ir</div>
+            <div class="contact-item">+989214843361</div>
+            <div class="contact-item">ارسال سریع و تضمین کیفیت</div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- منو -->
+    <nav class="nav">
+      <div class="container">
+        <div class="nav-content">
+          <div class="nav-title">کاتالوگ محصولات</div>
+          <input 
+            type="text" 
+            id="search-box" 
+            class="search-box" 
+            placeholder="جستجوی میوه، صیفی جات یا نوع محصول..."
+            autocomplete="off"
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- محتوای اصلی -->
+    <main class="main">
+      <div class="container">
+        <!-- معرفی -->
+        <section class="intro">
+          <h2>کشف تنوع صیفی جات و میوه</h2>
+          <p>
+            در این کاتالوگ، مجموعه‌ای از بهترین میوه‌ها و صیفی جات تازه را برای خرید عمده مشاهده می‌کنید. تمامی محصولات مستقیماً از تولیدکنندگان معتبر تامین شده و با تضمین کیفیت و ارسال سریع به سراسر کشور ارائه می‌شوند. برای سفارش عمده و دریافت قیمت روز با ما تماس بگیرید.
+          </p>
+        </section>
+
+        <!-- گرید محصولات -->
+        <section class="products">
+          <div id="product-grid" class="product-grid">
+            <!-- محصولات به صورت داینامیک بارگذاری می‌شوند -->
+          </div>
+        </section>
+      </div>
+    </main>
+
+    <!-- مودال محصول -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <button id="close-modal" class="close-modal">&times;</button>
+        <img id="modal-image" class="modal-image" src="" alt="">
+        <div class="modal-info">
+          <h3 id="modal-title" class="product-title"></h3>
+          <p id="modal-description" class="product-description"></p>
+          <div id="modal-features" class="product-features"></div>
+          <div style="margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #eee;">
+            <p style="color: var(--text-light); font-size: 0.9rem; margin-bottom: 1rem;">
+              <strong>برای استعلام قیمت و موجودی با ما تماس بگیرید:</strong>
+            </p>
+            <div style="display: flex; flex-wrap: wrap; gap: 1rem;">
+              <a href="mailto:sales@madebypersians.ir" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">
+                📧 sales@madebypersians.ir
+              </a>
+              <a href="tel:+989214843361" style="color: var(--primary-color); text-decoration: none; font-weight: 500;">
+                📞 +989214843361
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- فوتر -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>MadeByPersians</h3>
+            <p>فروش عمده میوه و صیفی جات تازه و با کیفیت. تامین مستقیم از تولیدکنندگان و ارسال به سراسر کشور.</p>
+            <p>تضمین تازگی، قیمت مناسب و تحویل سریع.</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>اطلاعات تماس</h3>
+            <a href="mailto:sales@madebypersians.ir">sales@madebypersians.ir</a>
+            <a href="tel:+989214843361">+989214843361</a>
+            <p>پاسخگویی به سفارشات و استعلام قیمت</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>محصولات ما</h3>
+            <p>گوجه فرنگی</p>
+            <p>خیار</p>
+            <p>هندوانه</p>
+            <p>طالبی</p>
+            <p>کدو</p>
+            <p>انواع میوه و صیفی جات دیگر</p>
+          </div>
+          
+          <div class="footer-section">
+            <h3>تضمین کیفیت</h3>
+            <p>✓ تازه و سالم</p>
+            <p>✓ تامین مستقیم</p>
+            <p>✓ قیمت رقابتی</p>
+            <p>✓ ارسال سریع</p>
+            <p>✓ پشتیبانی مشتریان</p>
+          </div>
+        </div>
+        
+        <div class="footer-bottom">
+          <p>&copy; ۲۰۲۴ MadeByPersians - فروش عمده میوه و صیفی جات. کلیه حقوق محفوظ است.</p>
+          <p>تامین مطمئن و سریع محصولات کشاورزی.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html> 
